@@ -1,94 +1,108 @@
-# 🎵 Beatfy – A Full-Stack Music Streaming Platform
+# Beatfy – A Full-Stack Music Streaming Platform
 
-Beatfy is a feature-rich, scalable music streaming application that supports multiple user roles — **Users**, **Creators**, and **Admins** — each with customized access and controls. Built with **Vue 3**, **Vite**, and a structured relational database, Beatfy brings together music playback, lyrics integration, playlist management, and admin moderation in one seamless platform.
+## About
+
+Beatfy is a full-stack music streaming application designed to serve three distinct user roles — Users, Creators, and Admins — each with tailored capabilities. Built using Vue 3 and a structured relational database, Beatfy provides a responsive music experience that includes real-time playback, playlist creation, lyrics display, and powerful admin controls. 
+
+The platform supports music streaming, playlist management, song ratings, lyrics integration, and role-based access — all in one cohesive interface. It also includes moderation features for administrators and content publishing tools for creators.
 
 ---
 
-## 🚀 Features
+## Features
 
-### 👤 User Functions
-- Sign up and login with token-based authentication
-- Stream songs and view lyrics in real-time
-- Rate songs and view average ratings
-- Create, manage, and delete playlists
+### User Functionality
+
+- Sign up and login using a secure token-based system
+- Stream music and view lyrics in real time
+- Rate songs and view average ratings from others
+- Create and manage personal playlists
 - Search songs and albums by name, artist, or rating
-- Receive email reminders if inactive for extended periods
+- Receive automated email reminders when inactive
 
-### ✍️ Creator Functions
-- All User functionalities, plus:
-- Upload and manage songs, albums, and lyrics
-- Export activity reports as CSV (songs uploaded, ratings, etc.)
-- View monthly reports of their contributions
+### Creator Functionality
 
-### 🛡️ Admin Functions
-- View platform-wide statistics (total songs, albums, creators)
-- Monitor and block inappropriate songs, albums, or creators
-- View top-rated songs and usage metrics
-- Manage user permissions and handle reported content
+- All standard user functions, plus:
+- Upload songs, albums, and lyrics
+- Manage uploaded content from a dedicated dashboard
+- Export activity and performance reports as CSV
+- View monthly summaries of content performance
 
----
+### Admin Functionality
 
-## 🧱 Database Schema
-
-### Tables & Key Fields
-- **Admin**: `admin_id`, `adminname`, `email`
-- **User**: `user_id`, `username`, `last_login`, `is_creator`
-- **Album**: `id`, `name`, `artist`, `user_id`
-- **Song**: `id`, `name`, `artist`, `lyrics`, `song_url`, `album_id`, `user_id`, `ratings`
-- **Playlist**: `id`, `name`, `user_id`
-- **Playlist_Songs**: Many-to-Many relationship between songs and playlists
+- Access platform-wide statistics (songs, albums, creators)
+- View, block, or remove flagged songs, albums, or creators
+- Review top-rated content and usage metrics
+- Manage permissions and moderate user-reported items
 
 ---
 
-## 🔍 Additional Functionalities
+## Database Schema
 
-- **Lyrics display** embedded in the streaming screen
-- **Creator dashboard** to manage contributions
-- **Monthly creator email reports**
-- **Admin analytics** and song ranking features
-- **Add multiple songs/albums at once**
-- **Responsive and interactive UI**
+Key tables and fields include:
+
+- `Admin`: admin_id, adminname, email  
+- `User`: user_id, username, last_login, is_creator  
+- `Album`: id, name, artist, user_id  
+- `Song`: id, name, artist, lyrics, song_url, album_id, user_id, ratings  
+- `Playlist`: id, name, user_id  
+- `Playlist_Songs`: linking table for songs and playlists (many-to-many)
 
 ---
 
-## 🛠️ Tech Stack
+## Additional Features
+
+- Embedded lyrics viewer in the streaming interface
+- Creator dashboard for uploads and statistics
+- Automated monthly reports to creators via email
+- Administrative analytics, ranking, and moderation controls
+- Bulk upload functionality for songs and albums
+- Fully responsive and interactive frontend design
+
+---
+
+## Tech Stack
 
 - **Frontend**: Vue 3, Vite, JavaScript
-- **Backend/DB**: (Assumed) SQL-based relational DB
-- **Authentication**: Token-based login system
-- **Data Export**: CSV generation for creator analytics
-- **Dev Tools**: VS Code, Volar, Node.js
+- **Backend**: SQL-based relational database (assumed)
+- **Authentication**: Token-based login and session management
+- **Data Export**: CSV reports for creator dashboards
+- **Dev Environment**: VS Code, Node.js, Volar
 
 ---
 
-## 🧪 Setup Instructions
+## Setup Instructions
 
-### Clone and Install
+1. Clone the repository and install dependencies:
 
 ```bash
 git clone https://github.com/yourusername/beatfy.git
 cd beatfy
 npm install
+```
 
+2. To run in development mode:
 
-### Compile and Hot-Reload for Development
-
-```sh
+```bash
 npm run dev
 ```
 
-### Compile and Minify for Production
+3. To build for production:
 
-```sh
+```bash
 npm run build
 ```
 
-## 🎬 Demo
+---
 
-You can watch the full demo of Beatfy in action here:  
-👉 [Watch Demo Video](https://drive.google.com/file/d/1joIa3zq7MpkHTIsnSxMXrS4Y7oX7RwD2/view?usp=drive_link)
+## Demo
 
+A full walkthrough of the Beatfy platform is available in the demo video.  
+Link: [Watch Demo Video](#)
 
+---
 
+## Contributions
 
-
+If you’d like to enhance Beatfy or suggest improvements, feel free to fork the repo and submit a pull request.
+README ... tfy.md
+Displaying README_Beatfy.md.

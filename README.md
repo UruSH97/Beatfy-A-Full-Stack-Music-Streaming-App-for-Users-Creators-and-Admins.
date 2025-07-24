@@ -104,5 +104,4 @@ Link: [Watch Demo Video](#)
 ## Contributions
 
 If you’d like to enhance Beatfy or suggest improvements, feel free to fork the repo and submit a pull request.
-README ... tfy.md
-Displaying README_Beatfy.md.
+
